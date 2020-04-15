@@ -1,0 +1,36 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/5cba34aa-34d7-4372-8461-3d390b787a48/ # 
+title: Jetflights
+/indigoflights:
+  get:
+    queryParameters:
+      from:
+      to:
+      doj:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Example/example.raml
+
+
+
+
+/airindiaflights:
+   get:
+    queryParameters:
+      from:
+      to:
+      doj:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Example/example.raml
+              
+
+              
+            
+          
+                
+    
